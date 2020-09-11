@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap');
+
+* {
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+}
+
+:root {
+	--primary-color: #0f4c81;
+	--secondary-color: hsl(208, 79%, 84%);
+	--highlight: #ffa;
+	--shade-1: #ccc;
+	--shade-2: #eee;
+	--text-color-on-primary: white;
+}

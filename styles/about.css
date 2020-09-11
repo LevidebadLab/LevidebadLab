@@ -1,0 +1,163 @@
+html {
+	background: var(--secondary-color);
+}
+
+body {
+	background: white;
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0 1em;
+	max-width: 100%;
+	padding-top: 3em;
+	width: 80ch;
+}
+
+body > * {
+	padding: 0 3em;
+	margin: 3em 0;
+}
+
+header,
+footer {
+	margin: 0;
+}
+
+h1,
+h2 {
+	color: var(--primary-color);
+	font-family: Gayathri;
+	font-variant: small-caps;
+}
+
+h2 {
+	border-bottom: 2px solid;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	margin: 3em 0;
+}
+
+p {
+	text-indent: 3em;
+	margin: 0.5em 0;
+}
+
+img {
+	box-shadow: 1px 5px 10px var(--shade-1);
+}
+
+.what-we-do {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 1em;
+}
+
+.what-we-do * {
+	grid-column: 1/-1;
+	margin: 0;
+}
+
+.what-we-do img {
+	grid-column: 2/-1;
+	grid-row: 2/4;
+	margin-right: 1em;
+	z-index: 9999;
+}
+
+.what-we-do blockquote {
+	background: var(--shade-2);
+	grid-column: 1;
+	grid-row: 3;
+	font-family: Gayathri;
+	font-size: 1.2em;
+	font-style: italic;
+	padding: 1em;
+}
+
+.what-we-do .filler {
+	background: var(--shade-2);
+	grid-column: 2;
+	grid-row: 3;
+}
+
+.what-we-do p:first-of-type {
+	grid-column: 1;
+	padding-right: 1em;
+}
+
+.history figure {
+	padding: 3em 3em 0;
+}
+
+.history figcaption {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.history img {
+	width: 100%;
+	height: auto;
+}
+
+.mission-statement {
+	text-align: center;
+	text-indent: 0;
+	padding: 3em;
+}
+
+.mission-statement span {
+	background: var(--primary-color);
+	color: var(--text-color-on-primary);
+	font-family: Gayathri;
+	font-size: 1.8em;
+	padding: 0.25em;
+}
+
+footer {
+	background: var(--primary-color);
+	color: var(--text-color-on-primary);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 0;
+}
+
+footer p {
+	text-indent: 0;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+footer li {
+	display: inline;
+	list-style: none;
+}
+
+footer li::before {
+	content: '👉';
+}
+
+a {
+	color: black;
+	background: var(--secondary-color);
+	padding: 0.5ch 1ch;
+	margin: 0 0.5ch;
+	text-decoration: none;
+}
+
+a:hover {
+	background: var(--highlight);
+	transition: all ease-in-out 250ms;
+}
+
+.copyright {
+	padding: 1em 0;
+	margin-top: 1em;
+}
