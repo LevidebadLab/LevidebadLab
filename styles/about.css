@@ -103,9 +103,9 @@ img {
 }
 
 .mission-statement {
+	padding: 3em;
 	text-align: center;
 	text-indent: 0;
-	padding: 3em;
 }
 
 .mission-statement span {
