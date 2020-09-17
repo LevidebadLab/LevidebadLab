@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap');
 
 * {
+	transition: all ease-in-out 250ms;
 	border: none;
 	box-sizing: border-box;
 	margin: 0;
@@ -16,4 +17,70 @@
 	--shade-1: #ccc;
 	--shade-2: #eee;
 	--text-color-on-primary: white;
+}
+
+nav {
+	background: var(--primary-color);
+}
+
+nav ul {
+	display: flex;
+}
+
+nav * {
+	list-style: none;
+	text-decoration: none;
+	color: unset;
+}
+
+nav ul li {
+	color: var(--text-color-on-primary);
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	background-color: var(--secondary-color);
+	box-shadow: 0px 8px 16px 0px var(--primary-color);
+	display: block;
+	height: 0;
+	min-width: 160px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown-content,
+.dropdown-content li:last-of-type a {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.dropdown a,
+.dropdown > :first-child {
+	display: block;
+	text-decoration: none;
+	padding: 1em;
+}
+
+.dropdown-content a {
+	color: black;
+	height: 0;
+	padding: 0.5em 1em;
+}
+
+a:hover,
+.dropdown:hover,
+.dropbtn:hover {
+	background: var(--highlight);
+	color: black;
+}
+
+.dropdown:hover a,
+.dropdown-content:hover a,
+.dropdown:hover .dropdown-content {
+	overflow: visible;
+	height: auto;
 }

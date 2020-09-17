@@ -167,7 +167,7 @@ footer li::before {
 	content: '👉';
 }
 
-a {
+footer a {
 	color: black;
 	background: var(--secondary-color);
 	padding: 0.5ch 1ch;
@@ -175,7 +175,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
 	background: var(--highlight);
 	transition: all ease-in-out 250ms;
 }
