@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap');
 
 * {
-	transition: all ease-in-out 250ms;
 	border: none;
 	box-sizing: border-box;
 	margin: 0;
@@ -48,6 +47,7 @@ body {
 	margin: 0 1em;
 	max-width: 100%;
 	padding-top: 3em;
+	transition: all ease-in-out 250ms;
 	width: 80ch;
 }
 
