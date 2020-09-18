@@ -7,6 +7,7 @@
 	outline: none;
 	padding: 0;
 	text-rendering: optimizeLegibility;
+	transition: all ease-in-out 250ms;
 }
 
 :root {
@@ -47,7 +48,6 @@ body {
 	margin: 0 1em;
 	max-width: 100%;
 	padding-top: 3em;
-	transition: all ease-in-out 250ms;
 	width: 80ch;
 }
 
