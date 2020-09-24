@@ -3,24 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/defaults.css">
     <title>Document</title>
 </head>
 <body>
 
-    <nav id="menu">
+    <header>
+        <a class="logo" href="index.html">
+            <img class="logo"
+                src="assets/logo.png"
+                width="100"
+                height="100"
+                alt="Serpente envolta numa pipeta que adentra um tubo de ensaio"/>
+        </a>
+        <h1>Sobre a LevidebadLab</h1>
+    </header>
+    <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Missão</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Contato</a></li>
+            <li class="dropdown">
+                <a href="index.html">Início</a>
+            </li>
+            <li class="dropdown">
+                <span class="dropbtn">Exames</span>
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="view/exames-oferecidos.html"
+                            >Exames oferecidos</a
+                        >
+                    </li>
+                    <li><a>Fazer agendamento</a></li>
+                    <li><a>Consultar resultados</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="view/about.html">Sobre Nós</a>
+            </li>
         </ul>
     </nav>
-    <main>
 
+    <main>
         
+        <section>
+            <h2>Conheça nossa unidade em Blumenau</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1778.9508634310537!2d-49.0785983!3d-26.9066138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1f2b4ebc711b%3A0xca47c4b02338db14!2sFunda%C3%A7%C3%A3o%20Universidade%20Regional%20de%20Blumenau%20FURB!5e0!3m2!1spt-BR!2sbr!4v1600975249313!5m2!1spt-BR!2sbr" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
     </main>
     
 </body>
