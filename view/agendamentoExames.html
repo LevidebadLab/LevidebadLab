@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../styles/exames-oferecidos.css" />
     <link rel="stylesheet" href="../styles/agendamento-exames.css" />
     <title>Agendamento de Exames</title>
-
+    <script src="../scripts/mask.js" defer></script>
+    <script src="../scripts/exames.js" defer></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                     <input type="text" style="width: 25%" maxlength="15"><br><br>
 
                     <label for="cpf"> CPF: (*)</label><br>
-                    <input type="text" style="width: 25%" maxlength="15"><br><br>
+                    <input id="cpf" type="text" style="width: 25%"><br><br>
 
                     <label for="dtnascim">Data de nascimento: (*)</label><br>
                     <input type="date" style="width: 25%" maxlength="8"><br><br>
@@ -74,7 +75,7 @@
                     </select><br><br>
 
                     <label for="telefone"> Telefone: (*)</label><br>
-                    <input type="text" style="width: 25%" maxlength="8"><br><br>
+                    <input id="telefone" type="text" style="width: 25%" ><br><br>
 
                     <fieldset>
                         <section>
