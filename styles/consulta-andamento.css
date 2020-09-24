@@ -1,0 +1,11 @@
+td {
+    border: 1px black solid;
+}
+.title {
+    color: var(--primary-color);
+    font-family: Gayathri;
+    font-variant: small-caps;
+}
+table {
+    border-collapse: collapse;
+}
