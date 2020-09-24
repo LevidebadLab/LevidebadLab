@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/defaults.css" />
+    <link rel="stylesheet" href="../styles/exames-oferecidos.css" />
+    <link rel="stylesheet" href="../styles/agendamento-exames.css" />
+    <title>Agendamento de Exames</title>
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="../index.html">
+            <img class="logo" src="../assets/logo.png" width="100" height="100"
+                alt="Serpente envolta numa pipeta que adentra um tubo de ensaio" />
+        </a>
+        <h1 class="title">Agendamento de Exames</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="../index.html">Início</a>
+                </li>
+                <li class="dropdown">
+                    <span class="dropbtn">Exames</span>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="exames-oferecidos.html">Exames oferecidos</a>
+                        </li>
+                        <li><a href="agendamentoExames.html">Fazer agendamento</a></li>
+                        <li><a href="consultaAndamento.html">Consultar resultados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="./about.html">Sobre Nós</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="" method="post">
+            <fieldset>
+                <section class="container">
+                    <article>
+                        <h2>
+                            Dados Pessoais
+                        </h2>
+                    </article>
+
+                    <label for="nome">Nome: (*)</label><br>
+                    <input type="text" style="width: 50%" maxlength="100"><br><br>
+
+                    <label for="email">Email: (*)</label><br>
+                    <input type="text" style="width: 50%" maxlength="50"> <br><br>
+
+                    <label for="rg"> RG: (*)</label><br>
+                    <input type="text" style="width: 25%" maxlength="15"><br><br>
+
+                    <label for="cpf"> CPF: (*)</label><br>
+                    <input type="text" style="width: 25%" maxlength="15"><br><br>
+
+                    <label for="dtnascim">Data de nascimento: (*)</label><br>
+                    <input type="date" style="width: 25%" maxlength="8"><br><br>
+
+                    <label for="genero"> Gênero: (*)</label><br>
+                    <select style="width: 50%; width: auto;" name="periodo" id="idperiodo">
+                        <option value="0" selected>-Selecione-</option>
+                    </select><br><br>
+
+                    <label for="telefone"> Telefone: (*)</label><br>
+                    <input type="text" style="width: 25%" maxlength="8"><br><br>
+
+                    <fieldset>
+                        <section>
+                            <article>
+                                <h2>
+                                    Dados do Agendamento
+                                </h2>
+                            </article>
+
+                            <label for="telefone"> Procedimento (*)</label><br>
+                            <input type="text" style="width: 25%" maxlength="8"><br><br>
+
+                            <label for="nome">Data:</label> <br>
+                            <input type="date" style="width: 25%" maxlength="8"><br><br>
+
+                            <label for="nome">Horário:</label><br>
+                            <input type="time" style="width: 25%" maxlength="8"><br><br>
+
+                    </fieldset>
+            </fieldset><br>
+
+            <button class="bt" style="width: 20%" type="submit" id="id-enviar" name="f-enviar"
+                value="EN">Enviar</button>
+            <button class="bt" style="width: 20%" type="reset" id="id-cancelar" name="f-cancelar"
+                value="CA">Cancelar</button>
+
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>
+            💖 Agradecemos a <a href="https://www.pexels.com">Pexel</a> e
+            aos seguintes artistas pelas mídias, em ordem de utilização:
+        </p>
+        <ul>
+            <!-- <li>
+                <a href="https://www.pexels.com/@edward-jenner">
+                    Edward Jenner</a
+                >
+            </li> -->
+            <li>
+                <a href="https://www.pexels.com/@rethaferguson">RF._.studio
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pexels.com/@elina-sazonova">Elina Sazonova</a>
+            </li>
+        </ul>
+        <p class="copyright">&copy; 2020 LevidebadLab</p>
+    </footer>
+</body>
+
+</html>
