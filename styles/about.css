@@ -90,6 +90,11 @@ article img {
 	height: auto;
 }
 
+.mission video {
+	align-self: center;
+	margin-top: 3em;
+}
+
 .mission-statement {
 	padding: 3em;
 	text-align: center;

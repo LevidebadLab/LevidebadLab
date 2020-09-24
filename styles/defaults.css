@@ -30,6 +30,15 @@ header {
 	align-items: center;
 }
 
+.user-bubble {
+	align-items: center;
+	color: var(--primary-color);
+	display: flex;
+	float: right;
+	font-family: Gayathri;
+	margin: 0;
+}
+
 h1,
 h2 {
 	color: var(--primary-color);
