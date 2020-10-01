@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/defaults.css" />
     <link rel="stylesheet" href="../styles/exames-oferecidos.css" />
+    <script src="../scripts/crud_exames.js" defer></script>
     <title>Exames</title>
 </head>
 
@@ -43,22 +44,37 @@
     </nav>
     <main>
         <section class="container">
+            <section class="cadastroExames">
+        <label for="nomeExame">Nome do Exame</label>
+        <input type="text" id="nomeExame" style="width: 50%" maxlength="100">
+        <label for="descricaoExame">Descrição do Exame</label>
+        <input type="text" id="descricaoExame" style="width: 50%" maxlength="100">
+        <label for="precoExame" >Preço do Exame</label>
+        <input type="number" min="0.00" max="10000.00" step="0.01" id="precoExame" style="width: 50%" maxlength="100" >
+         <button class="bt" style="width: 20%" type="submit" id="salvarExame" onclick="salvarRegistro()"
+                value="EN">Salvar</button>
+        </section>
             <article>
                 <h2>
                     Exames Oferecidos
                 </h2>
             </article>
-            <section class="card">
+            <section id="exames">
+            <section class="card" id=1>
                 <h4 class="card-title">Hemograma Completo</h4>
                 <p>
                     Hemograma é um exame que avalia as células sanguíneas de um
                     paciente, ou seja, as da série branca e vermelha, contagem de
                     plaquetas, reticulócitos e índices hematológicos.
                     Prazo médio até 48 horas
-                    Preço: R$ 1,77
                 </p>
+                <p>
+                     Preço: R$ 1,77
+                </p>
+                <img src="../assets/delete.png"  alt="Delete" class="img-icon" onclick="deletarRegistro(this)"/>
+                <img src="../assets/edit.png"  alt="Edit" class="img-icon" onclick="editarRegistro(this)"/>
             </section>
-            <section class="card">
+            <section class="card" id=2>
                 <h4 class="card-title">Parcial de Urina</h4>
                 </br>
                 <p>
@@ -67,10 +83,14 @@
                     Ele serve tanto para verificar a saúde do sistema
                     urinário quanto para investigar diversos tipos de alteração no organismo.
                     Prazo médio até 48 horas
+                </p>
+                <p>
                     Preço: R$ 3,50
                 </p>
+                  <img src="../assets/delete.png"  alt="Delete" class="img-icon" onclick="deletarRegistro(this)"/>
+                  <img src="../assets/edit.png"  alt="Edit" class="img-icon" onclick="editarRegistro(this)"/>
             </section>
-            <section class="card">
+            <section class="card" id=3>
                 <h4 class="card-title">Glicemia em Jejum</h4>
                 <p>
                     O exame de glicemia em jejum serve para medir o nível da glicose na circulação sanguínea do
@@ -79,8 +99,13 @@
                     apenas água é permitido.
                     O exame é utilizado para investigar possíveis casos de diabetes e para controle da doença.
                     Prazo médio até 48 horas
+                </p>
+                <p>
                     Preço: R$ 0,68
                 </p>
+                  <img src="../assets/delete.png"  alt="Delete" class="img-icon" onclick="deletarRegistro(this)"/>
+                  <img src="../assets/edit.png"  alt="Edit" class="img-icon" onclick="editarRegistro(this)"/>
+            </section>
             </section>
             <img src="./../assets/coleta-sangue.jpeg" alt="Amostra de sangue" class="coleta-img" />
         </section>

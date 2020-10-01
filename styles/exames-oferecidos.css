@@ -39,3 +39,13 @@ article {
   padding: 5px;
   align-items: center;
 }
+
+.cadastroExames {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-icon{
+    width: 25px;
+    height: 25px;
+}
