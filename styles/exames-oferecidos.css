@@ -49,3 +49,27 @@ article {
     width: 25px;
     height: 25px;
 }
+
+input, select {
+  border: 1px black solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 0.5%;
+  max-width: 600px;
+  padding-bottom: 10px;
+}
+
+.bt {
+  background-color:  #0f4c81 ;
+  border:1px solid ;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:13px;
+  padding:6px 10px;
+  text-decoration:none;
+  color: aliceblue;
+  } 
+ 
