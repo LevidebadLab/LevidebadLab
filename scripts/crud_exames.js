@@ -1,4 +1,3 @@
-let registro = "teste1";
 let codigoExame = 3;
 
 function salvarRegistro() {
