@@ -26,7 +26,6 @@ function salvarRegistro() {
 
 function deletarRegistro(card) {
   exame = card.parentElement;
-  debugger;
   exame.parentNode.removeChild(exame);
 }
 
@@ -37,7 +36,5 @@ function editarRegistro(card) {
   document.getElementById("precoExame").value = parseFloat(
     exame.children[2].innerText.split(" ")[2].replace(",", ".")
   );
-  debugger;
   exame.parentNode.removeChild(exame);
-  debugger;
 }
